@@ -52,9 +52,9 @@
     
     # Modules that must be imported into the global environment prior to importing this module
      RequiredModules = @(
-        @{ ModuleName = "Az.KeyVault"}
-        @{ ModuleName = "msal.ps"}
-        @{ ModuleName = "Microsoft.PowerShell.SecretManagement"}
+        @{ ModuleName = "Az.KeyVault"; ModuleVersion = "4.3" }
+        @{ ModuleName = "msal.ps"; ModuleVersion = "4.37.0.0" }
+        @{ ModuleName = "Microsoft.PowerShell.SecretManagement"; ModuleVersion = "1.0.0.0" }
      )
     
     # Assemblies that must be loaded prior to importing this module
