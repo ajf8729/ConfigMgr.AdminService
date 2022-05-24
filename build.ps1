@@ -51,7 +51,7 @@ $($previousVersion.releaseNotes)
         New-Item -Path $relPath -ItemType Directory -Force | Out-Null
     }
 
-    Copy-Item -Path "$modulePath\*" -Destination "$relPath" -Recurse -Exclude ".gitKeep", "releaseNotes.txt", "description.txt"
+    Copy-Item -Path "$modulePath\*" -Destination "$relPath" -Recurse -Exclude ".gitKeep", "releaseNotes.txt", "description.txt","docs"
 
     $Manifest = @{
         Path              = "$relPath\$moduleName.psd1"
